@@ -4,3 +4,4 @@ url: https://qerope.dev
 highlighter: rouge
 plugins:
   - jekyll-feed
+permalink: /:year/:month/:title/
