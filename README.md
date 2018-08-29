@@ -1,2 +1,2 @@
 # blog
-Jekyll site. `bundle exec jekyll serve`.
+Built with hugo. `hugo server -D`.
