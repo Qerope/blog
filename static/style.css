@@ -1,2 +1,6 @@
 body { font-family: Georgia, serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
 nav a { margin-right: 1rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #111; color: #ddd; }
+  a { color: #8ab4f8; }
+}
