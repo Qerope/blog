@@ -1,2 +1,2 @@
 # blog
-Built with hugo. `hugo server -D`.
+Astro site. `npm install && npm run dev`. Posts live in `src/content/blog/`.
