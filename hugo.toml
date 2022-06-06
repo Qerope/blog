@@ -1,5 +1,0 @@
-baseURL = "https://qerope.dev/"
-title = "Qerope"
-theme = "plain"
-[params]
-  description = "Small projects"

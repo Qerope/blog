@@ -1,4 +1,5 @@
 _site/
 .jekyll-cache/
-public/
-resources/
+node_modules/
+dist/
+.astro/
