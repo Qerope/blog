@@ -1,8 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog', (p) => !p.data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 <Base title="Home">
   <h1>Qerope</h1>
   <ul>
+    {posts.map((p) => (
+      <li><a href={`/posts/${p.slug}/`}>{p.data.title}</a> <small>{p.data.date.toISOString().slice(0, 10)}</small></li>
+    ))}
   </ul>
 </Base>
