@@ -12,5 +12,6 @@ const { Content, remarkPluginFrontmatter } = await post.render();
 ---
 <Base title={post.data.title}>
   <h1>{post.data.title}</h1>
+  <p><small>{remarkPluginFrontmatter.minutesRead}</small></p>
   <Content />
 </Base>
